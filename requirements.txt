@@ -1,0 +1,13 @@
+numpy
+pandas
+Flask
+itsdangerous
+Jinja2
+simplejson
+Werkzeug
+requests
+db-sqlite3
+Flask-Bootstrap
+Flask-SQLAlchemy
+opencv-python
+jsonify
