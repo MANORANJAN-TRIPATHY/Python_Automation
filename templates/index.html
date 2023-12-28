@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask SQL Server Example</title>
+</head>
+<body>
+    <h1>Table Data</h1>
+    <table border="1">
+        <tr>
+            <th>CustomerID</th>
+            <th>PersonID</th>
+            <th>StoreID</th>
+            <th>TerritoryID</th>
+            <th>AccountNumber</th>
+            <th>rowguid</th>
+            <th>ModifiedDate</th>
+            
+            <!-- Add more headers as needed based on your table structure -->
+        </tr>
+        {% for row in rows %}
+            <tr>
+                <td>{{ row.CustomerID }}</td>
+                <td>{{ row.PersonID }}</td>
+                <td>{{ row.StoreID }}</td>
+                <td>{{ row.TerritoryID }}</td>
+                <td>{{ row.AccountNumber }}</td>
+                <td>{{ row.rowguid }}</td>
+                <td>{{ row.ModifiedDate }}</td>
+                <!-- Add more columns as needed based on your table structure -->
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
